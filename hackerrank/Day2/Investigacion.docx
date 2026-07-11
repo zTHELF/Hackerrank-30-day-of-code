@@ -50,4 +50,4 @@ Propina = 12.00 × 20 / 100 = 2.40
 Impuestos = 12.00 × 8 / 100 = 0.96
 Costo total = 12.00 + 2.40 + 0.96 = 15.36
 
-Redondeamos 15.36 al entero más cercano e imprimimos el resultado: 15. de prueba resulta ser Welcome to 30 Days of Code!. Si no imprimes el contenido de la variable en stdout (salida estándar), no pasarás el caso de prueba oculto.
+Redondeamos 15.36 al entero más cercano e imprimimos el resultado: 15. de prueba resulta ser Welcome to 30 Days of Code!. Si no imprimes el contenido de la variable en stdout (salida estándar), no pasarás el caso de prueba oculto..
