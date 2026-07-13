@@ -1,0 +1,52 @@
+Objetivo
+Hoy hablaremos de los tipos de datos. ¡Revisa la pestaña "Tutorial" para ver materiales de aprendizaje y un video instructivo!
+
+Tarea
+Completa el código en el editor de abajo. Las variables i, d y s ya están declaradas e inicializadas por ti. Debes:
+
+Declarar variables: una de tipo int (entero), una de tipo double (decimal de doble precisión) y una de tipo String (cadena de texto).
+
+Leer líneas de entrada desde stdin (entrada estándar, de acuerdo con la secuencia dada en la sección de Formato de Entrada de abajo) e inicializar tus variables.
+
+Usar el operador + para realizar las siguientes operaciones:
+
+Imprimir la suma de i más tu variable int en una línea nueva.
+
+Imprimir la suma de d más tu variable double redondeada a un lugar decimal en una línea nueva.
+
+Concatenar s con la cadena de texto que leíste como entrada e imprimir el resultado en una línea nueva.
+
+Nota: Si estás usando un lenguaje que no admite el uso de + para la concatenación de cadenas (por ejemplo: C), puedes simplemente imprimir una variable inmediatamente después de la otra en la misma línea. La cadena proporcionada en tu editor debe imprimirse primero, seguida inmediatamente por la cadena que leíste de la entrada.
+
+Formato de Entrada
+
+La primera línea contiene un entero que debes sumar con i.
+
+La segunda línea contiene un double que debes sumar con d.
+
+La tercera línea contiene una cadena de texto que debes concatenar con s.
+
+Formato de Salida
+Imprime la suma de ambos enteros en la primera línea, la suma de ambos doubles (redondeada a 1 lugar decimal) en la segunda línea, y luego las dos cadenas concatenadas en la tercera línea.
+
+Entrada de Muestra
+
+Plaintext
+12
+4.0
+is the best place to learn and practice coding!
+
+Salida de Muestra
+
+Plaintext
+16
+8.0
+HackerRank is the best place to learn and practice coding!
+
+Explicación
+
+Cuando sumamos los enteros 4 y 12, obtenemos el entero 16.
+
+Cuando sumamos los números de punto flotante 4.0 y 4.0, obtenemos 8.0.
+
+Cuando concatenamos "HackerRank" con "is the best place to learn and practice coding!", obtenemos "HackerRank is the best place to learn and practice coding!".
