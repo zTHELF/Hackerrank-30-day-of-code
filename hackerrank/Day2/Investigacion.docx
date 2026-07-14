@@ -1,0 +1,55 @@
+Objetivo
+En este desafío trabajarás con operadores aritméticos. Consulta la pestaña "Tutorial" para ver materiales de aprendizaje y un video instructivo.
+
+Tarea
+Dado el precio de la comida (costo base de la comida), el porcentaje de propina (el porcentaje del precio de la comida que se agrega como propina) y el porcentaje de impuestos (el porcentaje del precio de la comida que se agrega como impuesto), encuentra e imprime el costo total de la comida. Redondea el resultado al número entero más cercano.
+
+Ejemplo
+Para un costo de comida = 100, porcentaje de propina = 15 y porcentaje de impuesto = 8.
+Una propina de 15% * 100 = 15, y los impuestos son 8% * 100 = 8. Imprime el valor (123) y sal de la función.
+
+Descripción de la función
+Completa la función solve en el editor.
+
+solve tiene los siguientes parámetros:
+
+double meal_cost: el costo de la comida antes de la propina y los impuestos.
+
+int tip_percent: el porcentaje de propina.
+
+int tax_percent: el porcentaje de impuestos.
+
+Devuelve: La función no devuelve nada. Imprime el valor calculado, redondeado al número entero más cercano.
+
+Nota: Asegúrate de usar valores precisos para tus cálculos, o de lo contrario podrías obtener un resultado de redondeo incorrecto.
+
+Formato de entrada
+Hay 3 líneas de entrada numérica:
+
+La primera línea tiene un double, meal_cost (el costo de la comida antes de impuestos y propina).
+
+La segunda línea tiene un entero, tip_percent (el porcentaje de meal_cost que se agrega como propina).
+
+La tercera línea tiene un entero, tax_percent (el porcentaje de meal_cost que se agrega como impuesto).
+
+Entrada de muestra
+Plaintext
+12.00
+20
+8
+
+Salida de muestra
+Plaintext
+15
+
+Explicación
+Dado:
+meal_cost = 12
+
+tip_percent = 20
+
+tax_percent = 8
+
+Cálculos:
+$\text{propina} = 12 \times \frac{20}{100} = 2.4$$\text{impuesto} = 12 \times \frac{8}{100} = 0.96$$\text{costo total} = 12 + 2.4 + 0.96 = 15.36$
+Redondeamos $15.36$ al entero más cercano e imprimimos el resultado: 15.
