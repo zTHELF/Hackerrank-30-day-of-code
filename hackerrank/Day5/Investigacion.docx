@@ -1,4 +1,3 @@
-Aquí tienes la traducción:
 Objetivo En este desafío, usaremos bucles (loops) para hacer algo de matemática. Revisa la pestaña de Tutorial para aprender más.
 Tarea Dado un número entero, n, imprime sus primeros 10 múltiplos. Cada múltiplo i (donde 1≤i≤10) debe imprimirse en una línea nueva con el formato: n x i = resultado.
 Ejemplo La impresión debería verse así (nota: en el original se juntaron, pero van en líneas separadas):
