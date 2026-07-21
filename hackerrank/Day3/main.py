@@ -1,17 +1,16 @@
-import math
-import os
-import random
-import re
-import sys
-
 if __name__ == '__main__':
-    N = int(input().strip())
+    N = input('Digite un numero entero o decimal: ').strip()
 
-    if N % 2 == 1:
-        print("Weird")
-    elif N % 2 == 0 and 2 <= N <= 5:
-        print("Not Weird")
-    elif N % 2 == 0 and 6 <= N <= 20:
-        print("Weird")
+    if (N.replace('.', '', 1).isdigit()):
+        N = (float(N) if '.' in N else int(N))
+
+        if (N % 2 != 0):
+            print("Weird")
+        elif (N % 2 == 0 and 2 <= N <= 5):
+            print("Not Weird")
+        elif (N % 2 == 0 and 6 <= N <= 20):
+            print("Weird")
+        elif (N % 2 == 0 and N > 20):
+            print("Not Weird")
     else:
-        print("Not Weird")
+        print('Digitaste un texto, por favor digita un numero entero o decimal.')
