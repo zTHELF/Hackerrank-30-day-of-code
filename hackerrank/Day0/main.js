@@ -3,5 +3,5 @@ function processData(inputString) {
     console.log("Hello, World.");
     
     // Write the second line of output that prints the contents of 'inputString' here.
-    console.log (inputString)
+    console.log(`Mensaje dirigido de la persona: ${inputString}`);
 }
