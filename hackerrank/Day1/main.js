@@ -5,39 +5,36 @@ var input_stdin = "";
 var input_stdin_array = "";
 var input_currentline = 0;
 
-process.stdin.on('data', function (data) {
-    input_stdin += data;
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
 });
 
-process.stdin.on('end', function () {
-    input_stdin_array = input_stdin.split("\n");
-    main();    
-});
-
-// Reads complete line from STDIN
-function readLine() {
-    return input_stdin_array[input_currentline++];
+// Reads complete line from STDIN (ahora es una promesa)
+function readLine(prompt) {
+    return new Promise((resolve) => {
+        rl.question(prompt, (answer) => resolve(answer));
+    });
 }
 
-function main() {
+async function main() {
     var i = 4
     var d = 4.0
     var s = "HackerRank "
-    
-// Declare second integer, double, and String variables.
+
+    // Declare second integer, double, and String variables.
     var entero;
     var decimal;
     var texto;
 
     // Read and save an integer, double, and String to your variables.
-    console.log("Ingrese un número entero: ");
-    entero = parseInt(readLine());
+    entero = parseInt(await readLine("Ingrese un número entero: "));
 
-    console.log("Ingrese un número decimal: ");
-    decimal = parseFloat(readLine());
+    decimal = parseFloat(await readLine("Ingrese un número decimal: "));
 
-    console.log("Ingrese un texto: ");
-    texto = readLine();
+    texto = await readLine("Ingrese un texto: ");
 
     // Print the sum of both integer variables on a new line.
     console.log(`La suma de los numeros enteros: ${i + entero}`);
@@ -47,4 +44,8 @@ function main() {
 
     // Concatenate and print the String variables on a new line.
     console.log(`La concatenacion entre los textos es: ${s}${texto}`);
+
+    rl.close();
 }
+
+main();
